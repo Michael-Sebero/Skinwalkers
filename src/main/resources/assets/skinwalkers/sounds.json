@@ -1,0 +1,124 @@
+{
+  "entity.skinwalker.scream": {
+    "category": "hostile",
+    "subtitle": "subtitles.skinwalkers.entity.skinwalker.scream",
+    "sounds": [
+      {
+        "name": "minecraft:mob/ghast/scream1",
+        "pitch": 0.62
+      },
+      {
+        "name": "minecraft:mob/ghast/scream2",
+        "pitch": 0.62
+      },
+      {
+        "name": "minecraft:mob/ghast/scream3",
+        "pitch": 0.62
+      },
+      {
+        "name": "minecraft:mob/ghast/scream4",
+        "pitch": 0.62
+      },
+      {
+        "name": "minecraft:mob/ghast/scream5",
+        "pitch": 0.62
+      },
+      {
+        "name": "minecraft:mob/ghast/affectionate_scream",
+        "pitch": 0.62
+      }
+    ]
+  },
+  "entity.skinwalker.scream_layer": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "minecraft:mob/endermen/stare",
+        "pitch": 0.55
+      },
+      {
+        "name": "minecraft:mob/endermen/scream1",
+        "pitch": 0.5,
+        "volume": 0.8
+      },
+      {
+        "name": "minecraft:mob/endermen/scream2",
+        "pitch": 0.5,
+        "volume": 0.8
+      },
+      {
+        "name": "minecraft:mob/endermen/scream3",
+        "pitch": 0.5,
+        "volume": 0.8
+      },
+      {
+        "name": "minecraft:mob/endermen/scream4",
+        "pitch": 0.5,
+        "volume": 0.8
+      }
+    ]
+  },
+  "entity.skinwalker.shift": {
+    "category": "neutral",
+    "subtitle": "subtitles.skinwalkers.entity.skinwalker.shift",
+    "sounds": [
+      {
+        "name": "minecraft:mob/skeleton/hurt1",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:mob/skeleton/hurt2",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:mob/skeleton/hurt3",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:mob/skeleton/hurt4",
+        "pitch": 0.6
+      },
+      {
+        "name": "minecraft:mob/skeleton/step1",
+        "pitch": 0.5
+      },
+      {
+        "name": "minecraft:mob/skeleton/step2",
+        "pitch": 0.5
+      },
+      {
+        "name": "minecraft:mob/skeleton/step3",
+        "pitch": 0.5
+      },
+      {
+        "name": "minecraft:mob/skeleton/step4",
+        "pitch": 0.5
+      }
+    ]
+  },
+  "entity.skinwalker.shift_layer": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "minecraft:mob/slime/big1",
+        "pitch": 0.6,
+        "volume": 0.7
+      },
+      {
+        "name": "minecraft:mob/slime/big2",
+        "pitch": 0.6,
+        "volume": 0.7
+      },
+      {
+        "name": "minecraft:mob/slime/big3",
+        "pitch": 0.6,
+        "volume": 0.7
+      },
+      {
+        "name": "minecraft:mob/slime/big4",
+        "pitch": 0.6,
+        "volume": 0.7
+      }
+    ]
+  }
+}

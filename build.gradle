@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+    id 'com.gtnewhorizons.retrofuturagradle' version '2.0.3'
+}
+
+version = mod_version
+group = 'com.michaelsebero.skinwalkers'
+
+base {
+    archivesName = 'skinwalkers'
+}
+
+java {
+    // Java 8 bytecode runs on both Forge 1.12.2 and Cleanroom (Java 21+).
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+    withSourcesJar()
+}
+
+minecraft {
+    mcVersion = '1.12.2'
+    mcpMappingChannel = 'stable'
+    mcpMappingVersion = '39'
+    username = 'Developer'
+
+    injectedTags.put('VERSION', project.version)
+}
+
+tasks.named('injectTags') {
+    outputClassName = 'com.michaelsebero.skinwalkers.Tags'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('mcmod.info') {
+        expand 'version': project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+    // Minecraft's log4j config writes logs/ relative to the working directory.
+    def testRunDir = layout.buildDirectory.dir('test-run')
+    workingDir = testRunDir
+    doFirst { testRunDir.get().asFile.mkdirs() }
+}

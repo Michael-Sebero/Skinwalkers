@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "skinwalkers",
+    "name": "Skinwalkers",
+    "description": "Adds skinwalkers: monsters that pose as farm animals, stalk players at night and, once looked at for too long, take their form.",
+    "version": "${version}",
+    "mcversion": "1.12.2",
+    "url": "https://github.com/Michael-Sebero/Skinwalkers",
+    "authorList": ["michaelsebero"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
